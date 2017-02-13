@@ -1,3 +1,11 @@
-#!usr/bin/env ruby
-# puts "hey"
-CLI.new.run
+#!/usr/bin/env ruby
+
+# require cares about where we run the file *from*. and the file
+# path will be based on that.
+# require("./lib/rez/cli")
+
+# require_relative - looks at where the file is that we *ran*
+# and uses the path based on that
+require_relative("../lib/rez/cli")
+
+Cli.new.run
