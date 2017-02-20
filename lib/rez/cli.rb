@@ -1,14 +1,12 @@
-class Player
-     attr_accessor :name,:age,:position
-     def initialize(name,age,position)
-        @name=name
-        @age=age
-        @position=position
-
-     end
-end
+require_relative '../rez/player'
+require 'colorize'
 class Cli
     def run
+        puts"********************************".red
+  puts "                             "
+  puts "      Welcome to our position!      "
+  puts "                             "
+puts"********************************".red
         players = [
             marcelo = Player.new("Marcelo", 50, "Defense"),
             ali = Player.new("Ali", 50, "Defense"),
@@ -22,5 +20,5 @@ class Cli
         end
 
 
-    end
+    end 
 end
