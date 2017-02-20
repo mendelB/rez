@@ -6,7 +6,7 @@
 
 # require_relative - looks at where the file is that we *ran*
 # and uses the path based on that
-require_relative '../lib/rez/cli'
+require_relative '../lib/rez'
 
-Cli.new.run
+Rez::Cli.new.run
 
